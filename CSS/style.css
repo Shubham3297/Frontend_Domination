@@ -12,9 +12,18 @@ body {
 
 h1 {
   /* by link */
+  /* margin-top: 20px; */
   font-family: "Ultra";
+  font-weight: 100;
+  /* text-transform: capitalize; */
+  /* text-transform: lowercase; */
+  /* text-transform: uppercase; */
+  text-transform: none;
+  /* text-decoration: underline; */
+  /* text-decoration: overline; */
+  /* text-decoration: line-through; */
   /* // by import */
-  font-family: "Fredericka the Great";
+  /* font-family: "Fredericka the Great"; */
   color: red;
   /* background-color: black; */
 }
