@@ -11,7 +11,10 @@ body {
 }
 
 h1 {
-  font-family: "Playfair Display";
+  /* by link */
+  font-family: "Ultra";
+  /* // by import */
+  font-family: "Fredericka the Great";
   color: red;
   /* background-color: black; */
 }
