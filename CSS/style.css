@@ -11,15 +11,16 @@ body {
 }
 
 h1 {
+  font-family: "Playfair Display";
   color: red;
-  background-color: black;
+  /* background-color: black; */
 }
 
-html {
+/* html {
   font-size: 200px;
-}
+} */
 
-#parent {
+/* #parent {
   width: 50px;
   min-width: 200px;
   max-width: 500px;
@@ -27,7 +28,7 @@ html {
   min-height: 200px;
   max-height: 500px;
   background-color: red;
-}
+} */
 
 /* #parent {
   width: 2rem;
