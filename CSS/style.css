@@ -10,6 +10,17 @@ body {
   height: 100%;
 }
 
+p {
+  display: inline-block;
+  background-color: red;
+  width: 40px;
+  height: 40px;
+}
+
+a {
+  display: block;
+}
+
 #box {
   /* width: 300px; */
   width: 600px;
