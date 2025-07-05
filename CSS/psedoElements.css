@@ -10,6 +10,18 @@ body {
   height: 100%;
 }
 
+/* h1::first-line {
+  color: red;
+} */
+
+/* h1::first-letter {
+  font-size: 120px;
+} */
+
+h1::selection {
+  color: green;
+}
+
 p {
   /* background-color: green; */
   position: relative;
