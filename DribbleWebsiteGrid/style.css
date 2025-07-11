@@ -21,7 +21,7 @@ body {
 }
 
 #left-top-left {
-  background-color: crimson;
+  /* background-color: crimson; */
   padding: 40px;
 }
 
@@ -33,7 +33,7 @@ body {
 }
 
 #left-top-right {
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   /* justify-self: right;
   text-align: right; */
   justify-items: right;
@@ -52,8 +52,12 @@ body {
   color: #333;
 }
 
+#left-top-right h6 {
+  display: none;
+}
+
 #left-center {
-  background-color: royalblue;
+  /* background-color: royalblue; */
   grid-column: 1 / 3;
   padding: 40px;
 }
@@ -72,7 +76,7 @@ body {
 }
 
 #left-bottom {
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
   grid-column: 1 / 3;
   padding: 25px;
 }
@@ -80,10 +84,109 @@ body {
 #left-bottom p {
   width: 50%;
   font-size: 15px;
+  font-weight: 500;
+  color: #666;
 }
 
 #right {
-  background-color: red;
+  /* background-color: red; */
   grid-column: 3;
   grid-row: 1 / 4;
+  padding: 40px;
+  padding-right: 120px;
+}
+
+#right video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+#arrow {
+  position: absolute;
+  top: 50%;
+  left: 52.5%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  color: white;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+#arrow i {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+@media (max-width: 600px) {
+  #main {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 6% 40% 10% 44%;
+  }
+
+  #left-top-left {
+    padding: 20px;
+  }
+
+  #square {
+    height: 15px;
+    width: 15px;
+  }
+
+  #left-top-right {
+    padding: 20px;
+    text-align: end;
+  }
+
+  #left-top-right h4 {
+    display: none;
+  }
+
+  #left-top-right h5 {
+    display: none;
+  }
+
+  #left-top-right h6 {
+    display: block;
+    font-size: 25px;
+  }
+
+  #left-center {
+    padding: 40px;
+    align-content: center;
+    justify-self: center;
+    width: 100%;
+  }
+
+  #left-center h1 {
+    font-size: 10vw;
+    line-height: 12.2vw;
+  }
+
+  #left-center h1:nth-child(2n) {
+    text-align: right;
+  }
+
+  #left-bottom p {
+    width: 100%;
+    font-size: 17px;
+  }
+
+  #right {
+    grid-column: 1 / 3;
+    grid-row: 4;
+    padding: 10px;
+  }
+
+  #arrow {
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    padding: 10px;
+  }
 }
