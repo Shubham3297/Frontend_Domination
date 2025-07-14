@@ -49,9 +49,11 @@ body {
 }
 
 #center h1 {
-  font-size: 70px;
+  /* font-size: 70px; */
+  font-size: 4.6vw;
   font-weight: 500;
-  line-height: 75px;
+  /* line-height: 75px; */
+  line-height: 4.7vw;
 }
 
 #center-in {
@@ -64,9 +66,11 @@ body {
 }
 
 #center-in p {
-  font-size: 25px;
+  /* font-size: 25px; */
+  font-size: 1.2vw;
   font-weight: 500;
-  line-height: 30px;
+  /* line-height: 30px; */
+  line-height: 1.9vw;
 }
 
 #right {
@@ -112,4 +116,80 @@ body {
   background-size: cover;
   background-position: center;
   background-position: 0 20%;
+}
+
+@media (max-width: 600px) {
+  #nav {
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  #nav h4 {
+    font-size: 15px;
+    font-weight: 600;
+    /* display: none; */
+  }
+
+  #nav i {
+    font-size: 15px;
+    padding: 7px;
+  }
+
+  #center {
+    padding: 20px 20px;
+  }
+
+  #center h1 {
+    font-size: 10.6vw;
+    line-height: 12vw;
+  }
+
+  #center-in {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  #center-in p {
+    margin-top: 20px;
+    font-size: 4.2vw;
+    line-height: 4.9vw;
+  }
+
+  #right {
+    width: 100%;
+  }
+
+  .elem {
+    /* background-color: yellow; */
+    /* margin: 5px; */
+    padding: 12px 0px;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .elem i {
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 1;
+  }
+
+  .elem a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .elem:hover i {
+    opacity: 1;
+  }
+
+  .elem:hover a {
+    text-decoration: underline;
+  }
 }
