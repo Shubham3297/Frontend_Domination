@@ -32,3 +32,42 @@ body {
     rotate: 360deg;
   }
 }
+
+img {
+  height: 200px;
+  position: absolute;
+  animation-name: chutki-anime;
+  animation-duration: 4s;
+  animation-delay: 1s;
+}
+
+/* Incline Animation  - Initil and Final position Animation */
+/* @keyframes chutki-anime {
+  from {
+    left: 0;
+    top: 0;
+  }
+  to {
+    left: 70%;
+    top: 50%;
+  }
+} */
+
+/* Different Controlled by %  */
+@keyframes chutki-anime {
+  0% {
+    left: 0;
+    top: 0;
+    rotate: 0deg;
+  }
+  50% {
+    left: 70%;
+    top: 0;
+    rotate: 0deg;
+  }
+  100% {
+    left: 70%;
+    top: 50%;
+    rotate: 360deg;
+  }
+}
