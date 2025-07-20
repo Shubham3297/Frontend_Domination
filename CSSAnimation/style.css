@@ -118,3 +118,37 @@ img {
     /* rotate: 360deg; */
   }
 }
+
+h1 {
+  color: red;
+}
+
+h1::after {
+  content: " and Brother.";
+  color: blue;
+  font-size: 20px;
+}
+
+/* h1::after {
+  content: "❤️";
+} */
+
+h1::before {
+  content: "Hi!!";
+  color: green;
+  font-size: 40px;
+}
+
+#box3 {
+  height: 300px;
+  width: 300px;
+  background-color: lightcyan;
+}
+
+#box3::after {
+  content: " Whats up ?";
+}
+
+#box3::before {
+  content: "Raj ";
+}
