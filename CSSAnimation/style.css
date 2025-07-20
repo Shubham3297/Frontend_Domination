@@ -166,23 +166,32 @@ button {
   font-weight: 600;
   transition: all linear 0.5s;
   position: relative;
+  overflow: hidden;
+  /* comment - gol , uncooment - within square for overflow        */
 }
 
 button::after {
   content: "";
-  height: 100%;
-  width: 0%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  /* height: 100%; */
+  /* width: 0%; */
   /* width: 100%; */
   background-color: cyan;
   position: absolute;
-  left: 0;
-  top: 0;
+  /* left: 0;
+  top: 0; */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
   transition: all linear 0.5s;
   z-index: -1;
 }
 
 button:hover::after {
-  width: 100%;
+  /* width: 100%; */
+  transform: translate(-50%, -50%) scale(3);
 }
 
 button:hover {
