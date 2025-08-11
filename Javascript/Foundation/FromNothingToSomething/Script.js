@@ -40,7 +40,7 @@ console.log("a", a);
 
 // Event Handling
 
-var btn = document.querySelector("button");
+// var btn = document.querySelector("button");
 // btn.addEventListener(event, callback);
 // btn.addEventListener("click", function () {
 //   // alert();
@@ -53,12 +53,20 @@ var btn = document.querySelector("button");
 //   btn.style.backgroundColor = "red";
 // });
 
-btn.addEventListener("mouseover", function () {
-  btn.textContent = "Uploading";
-  btn.style.backgroundColor = "red";
-});
+// btn.addEventListener("mouseover", function () {
+//   btn.textContent = "Uploading";
+//   btn.style.backgroundColor = "red";
+// });
 
-btn.addEventListener("mouseleave", function () {
-  btn.textContent = "Uploading";
-  btn.style.backgroundColor = "green";
+// btn.addEventListener("mouseleave", function () {
+//   btn.textContent = "Uploading";
+//   btn.style.backgroundColor = "green";
+// });
+
+// Event Object
+
+document.querySelector("body");
+addEventListener("mousemove", function (e) {
+  // console.log("e", e);
+  console.log("e", e?.clientX, e?.clientY);
 });
