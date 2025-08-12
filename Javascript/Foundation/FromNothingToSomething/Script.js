@@ -1,4 +1,4 @@
-console.log("first");
+// console.log("first");
 let a = 4;
 let b = a;
 b = b + 2;

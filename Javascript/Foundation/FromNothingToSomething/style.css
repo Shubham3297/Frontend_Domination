@@ -14,3 +14,11 @@ body {
 .box {
   color: green;
 }
+
+#img1 {
+  width: 200px;
+}
+
+#img2 {
+  width: 200px;
+}
