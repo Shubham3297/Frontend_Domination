@@ -39,20 +39,78 @@
 // });
 
 // Q-3 B Form submission and validation
-var form = document.querySelector("form");
-var inps = document.querySelectorAll('input[type="text"]');
-var h4 = document.querySelector("h4");
+// var form = document.querySelector("form");
+// var inps = document.querySelectorAll('input[type="text"]');
+// var h4 = document.querySelector("h4");
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  for (var i = 0; i < inps.length; i++) {
-    if (inps[i].value.trim() === "") {
-      h4.textContent = "Error... , Some fields are empty.";
-      h4.style.color = "red";
-      break;
-    } else {
-      h4.textContent = "";
-      h4.style.color = "black";
-    }
-  }
-});
+// form.addEventListener("submit", function (e) {
+//   e.preventDefault();
+//   for (var i = 0; i < inps.length; i++) {
+//     if (inps[i].value.trim() === "") {
+//       h4.textContent = "Error... , Some fields are empty.";
+//       h4.style.color = "red";
+//       break;
+//     } else {
+//       h4.textContent = "";
+//       h4.style.color = "black";
+//     }
+//   }
+// });
+
+// Q-4  Add / Remove Elements
+// var add = document.querySelector("#addElement");
+// var remove = document.querySelector("#remove");
+// var inp = document.querySelector("input");
+// var ul = document.querySelector("ul");
+
+// var li;
+
+// add.addEventListener("click", function () {
+//   if (inp.value.trim() !== "") {
+//     li = document.createElement("li");
+//     li.textContent = inp.value;
+//     ul.appendChild(li);
+//     inp.value = "";
+//   }
+// });
+
+// remove.addEventListener("click", function () {
+//   ul.removeChild(li);
+// });
+
+// Q-5 Counter Timer
+// var start = document.querySelector("#start");
+// var stop = document.querySelector("#stop");
+// var h4 = document.querySelector("h4");
+
+// var int;
+
+// start.addEventListener("click", function () {
+//   var count = 0;
+//   int = setInterval(() => {
+//     h4.textContent = count;
+//     count++;
+//   }, 1000);
+// });
+
+// stop.addEventListener("click", function () {
+//   clearInterval(int);
+// });
+
+//    <!-- Q-6 Tab bases data shown -->
+
+// Q-7 Progress Bar
+// var prg = document.querySelector("#progress");
+// var h3 = document.querySelector("h3");
+
+// var count = 0;
+// var int = setInterval(() => {
+//   if (count === 100) {
+//     h3.style.opacity = 1;
+//     clearInterval(int);
+//   }
+//   count++;
+//   prg.style.width = count + "%";
+// }, 50);
+
+// Q-8 Progress Bar
